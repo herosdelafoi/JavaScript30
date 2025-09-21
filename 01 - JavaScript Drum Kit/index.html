@@ -61,7 +61,7 @@
 
 <script>
     function playSound(e){
-      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);//on declare une variable qui conserve le premier element qui correspond à un sélecteur CSS
       if(!audio) return;
       audio.currentTime = 0;  
       audio.play();
